@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  /* border: 1px solid red; */
+}
+canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+body{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background: linear-gradient(#300481 , rgba(255, 85, 38, 0.808)); */
+  cursor: cell;
+}
+h1{
+    color: #fff;
+    font-weight: 200;
+    text-align: center;
+    width: 100%;
+    z-index: 333;
+    font-size: 3em;
+    border-radius: 20% 70% 50% 25%/80% 70% 40% 50%;
+    padding: 10px 20px;
+    margin: 30px 0;
+    transition: all .2s ease;
+}
+
+.container{
+  z-index: 12;
+  width: 400px;
+  padding: 25px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.9);
+  transition: all 0.1s linear ;
+}
+.container:hover{
+  padding:40px ;
+
+}
+.container input[type="text"]{
+  width: 100%;
+  height: 100px;
+  margin: 0 10px;
+  outline: none;
+  border: none;
+  color: #f9f9f9;
+  font-size: 3.5em;
+  text-align: right;
+  padding-right: 10px;
+  pointer-events: none;
+  font-weight: 200;
+  background: transparent;
+}
+.container input[type="button"]{
+  height: 65px;
+  color: #fff;
+  width: calc(100% / 4 - 5px);
+  background: rgba(255, 255, 255, 0.1);
+  background-size: 400% 400%;
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.container input[type="button"]:hover{
+    background: rgba(247, 137, 19, 0.288);
+    /* background-position: 100% 50%; */
+    
+}
+#equalsto{
+    background: rgba(240, 165, 3, 0.642);
+    
+}
+p{
+    color: #fff;
+    font-size: 11px;
+    font-weight: 200;
+    margin:20px 0 0 ;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 2.2em;
+
+  }
+  .container{
+    z-index: 12;
+    width: 300px;
+    padding: 18px;
+  }
+  .container input[type="text"]{
+    
+    height: 80px;
+    margin: 0 3px;
+    outline: none;
+    border: none;
+    color: #f9f9f9;
+    font-size: 3em;
+    text-align: right;
+    padding-right: 10px;
+    pointer-events: none;
+    font-weight: 200;
+    background: transparent;
+  }
+  .container input[type="button"]{
+    height: 50px;
+    color: #fff;
+    width: calc(100% / 4 - 5px);
+    background: rgba(255, 255, 255, 0.1);
+    background-size: 400% 400%;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    margin-top: 6px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .container:hover{
+    padding:30px ;
+  
+  }
+}
